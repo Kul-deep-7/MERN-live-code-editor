@@ -102,7 +102,7 @@ app.post("/compile", async (req, res) => {
       language: language,
       versionIndex: languageConfig[language].versionIndex,
       clientId: process.env.jDoodle_clientId,
-      clientSecret: process.env.kDoodle_clientSecret,
+      clientSecret: process.env.jDoodle_clientSecret,
     });
 
     res.json(response.data);
