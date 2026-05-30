@@ -114,7 +114,7 @@ function EditorPage() {
   const runCode = async () => {
     setIsCompiling(true);
     try {
-      const response = await axios.post("http://localhost:5000/compile", {
+      const response = await axios.post("https://mern-live-code-editor.onrender.com/compile", {
         code: codeRef.current,
         language: selectedLanguage,
       });
