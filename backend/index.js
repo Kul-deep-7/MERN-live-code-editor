@@ -1,4 +1,4 @@
-require("dotenv").config();
+
 const express = require("express");
 const app = express();
 const http = require("http");
@@ -7,8 +7,9 @@ const ACTIONS = require("./Actions");
 const cors = require("cors");
 const axios = require("axios");
 const server = http.createServer(app);
+require("dotenv").config();
 
-console.log(process.env.jDoodle_clientId)
+//console.log(process.env.jDoodle_clientI)
 
 const languageConfig = {
   python3: { versionIndex: "3" },
